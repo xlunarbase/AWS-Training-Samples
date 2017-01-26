@@ -4,10 +4,10 @@ import boto3
 
 dynamodb = boto3.resource(
     'dynamodb',
-    region_name='eu-west-1'
+    region_name='us-east-1'
 )
 
-table = dynamodb.Table('docker-test')
+table = dynamodb.Table('claude-clement-docker-test')
 
 
 # Insert a new user into the database, obviously in real life we should encrypt the password!
